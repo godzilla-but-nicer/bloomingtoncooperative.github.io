@@ -1,0 +1,20 @@
+---
+layout: base
+---
+<head>
+  <style>
+  .centerh1 {text-align: center;}
+  .centerdiv {text-align: center;}
+  </style>
+</head>
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  <div class="centerdiv">
+    {{ content }}
+  </div>
+
+</div>

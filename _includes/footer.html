@@ -1,0 +1,30 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        </p>
+      {%- if site.email %}
+        <ul class="contact-list">
+            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+    <div class="social-links">
+      {%- include social.html -%}
+    </div>
+      {%- endif %}
+      </div>
+      <div class="footer-col">
+        <p>{{ site.description | escape }}</p>
+      </div>
+
+      <div class="footer-col">
+        <p>Copyright © 2016-2022 by BCL. The BCL with the green trees logo℠™ are trade- and service-marked by Bloomington Cooperative Living. All rights reserved.</p>
+      </div>
+    </div>
+
+
+  </div>
+
+</footer>
